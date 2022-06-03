@@ -179,44 +179,4 @@ ul{
 	box-shadow: 0px 0px 10px #000;
 }
 
-
 /*cards*/
-
-/*Trainers*/
-
-.trainers{
-	height: auto;
-	padding: 1em;
-}
-
-.trainers-content{
-	display: grid;
-	grid-column: auto auto auto;
-	align-items: center;
-	padding: 1em;
-}
-
-.trainers-text{
-	grid-column: 1/4;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-	padding-left: 1em;
-}
-
-.trainers-h2{
-	font-size: 3em;
-	font-family: 'Roboto Slab', serif;
-	letter-spacing: 1px;
-	padding-bottom: .5em;
-}
-
-.trainers-img{
-	grid-column: 4/5;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-
-/*Trainers*/
