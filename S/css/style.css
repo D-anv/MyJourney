@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+html{
+	font-size: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+ul{
+	list-style: none;
+}
+
+/*Nav*/
+
+.Universal-Header{
+	display: flex;
+	position: fixed;
+	top: 0;
+	z-index: 1000000000000000000000000;
+	width: 100%;
+	background-color: #fff;
+	align-items: center;
+	box-shadow: 0px -25px 40px #000;
+}
+
+.logo{
+	margin: .5em 1em;
+}
+
+.logo-image{
+	height: 80px;
+	width: 85px;
+}
+
+.Universal-Nav{
+	display: flex;
+	width: 100%;
+	font-family: 'Roboto Slab', serif;
+}
+
+.nav__ul{
+	display: flex;
+	width: 100%;
+	padding-right: 1em;
+	justify-content: flex-end;
+}
+
+.nav__ul li{
+	margin: 0 1em;
+	font-size: 1.9em;
+}
+
+.nav__ul li a{
+	position: relative;
+	padding: 0 10px;
+}
+
+.nav__ul li a:after{
+	content: "";
+	position: absolute;
+	background-color: #000;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -10px;
+	transition: .3s;
+}
+
+.nav__ul li a:hover:after{
+	width: 100%;
+}
+
+/*Nav*/
+
+/*showcase*/
+
+.showcase{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background:url("https://imgs.search.brave.com/wE1ee4c57e1PyOjyafgL2qQJLwVz3egcirI5CHknHLY/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zMy5h/bWF6b25hd3MuY29t/L3RoaXNpc3RvZGF5/LXdlYmFzc2V0cy9z/aXRlTWVkaWEvRGV2/b3Rpb24tSW1hZ2Vz/LzIwMTktMTAvd29y/a291dC5qcGc")center center/cover;
+}
+
+.showcase-tittle{
+	font-size: 3em;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	color: #fff;
+}
+
+/*Showcase*/
+
+/*cards*/
+
+.cards{
+	height: auto;
+	padding: 1em;
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 6px;
+}
+
+.grid{
+	display: grid;
+	grid-auto-columns: auto auto auto;
+	grid-gap: 2em;
+	padding: 1em;
+}
+
+.grid a{
+	border-radius: 4px;
+	box-shadow: 0px 0px 6px #000;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.One{
+	position: relative;
+	z-index: 1;
+	grid-column: 1/3;
+	background:url('https://images.pexels.com/photos/4754140/pexels-photo-4754140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')center center/cover;
+	height: 250px;	
+	transition: all .2s;
+}
+
+.One:hover{
+	height: 260px;
+	filter: blur(3px);
+	margin: -.5em -.8em;
+	letter-spacing: 10px;
+	box-shadow: 0px 0px 10px #000;
+}
+
+.option-tittle{
+	font-size: 4rem;
+	position:absolute;
+	text-align: center;
+	z-index: 10000;
+}
+
+.Two{
+	position: relative;
+	z-index: 1;
+	grid-column: 3/4;
+	height: 250px;
+	background: url('https://images.pexels.com/photos/6294197/pexels-photo-6294197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')center center/cover;
+	transition: all .2s;
+}
+
+.Two:hover{
+	height: 260px;
+	margin: -.5em -.8em;
+	filter: blur(3px);
+	box-shadow: 0px 0px 10px #000;
+	letter-spacing: 10px;
+}
+
+.Three{
+	position: relative;
+	z-index: 1;
+	grid-column: 1/4;
+	height: 300px;
+	background: url('https://images.pexels.com/photos/1092878/pexels-photo-1092878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')center center/cover;
+	transition: all .2s;
+	
+}
+
+.Three:hover{
+	height: 310px;
+	margin: -.5em -.8em;
+	filter: blur(3px);
+	letter-spacing: 10px;
+	box-shadow: 0px 0px 10px #000;
+}
+
+
+/*cards*/
+
+/*Trainers*/
+
+.trainers{
+	height: auto;
+	padding: 1em;
+}
+
+.trainers-content{
+	display: grid;
+	grid-column: auto auto auto;
+	align-items: center;
+	padding: 1em;
+}
+
+.trainers-text{
+	grid-column: 1/4;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding-left: 1em;
+}
+
+.trainers-h2{
+	font-size: 3em;
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 1px;
+	padding-bottom: .5em;
+}
+
+.trainers-img{
+	grid-column: 4/5;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/*Trainers*/
