@@ -3,27 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Journey</title>
+	<title>My Journeys</title>
 	<link rel="stylesheet" href="css/Normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="images/MY_JOURNEY-removebg-preview.png">
+	<link rel="icon" href="images/Logazo.png" id="tab-logo">
+	<script src="https://kit.fontawesome.com/e6932475d2.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
+	
 </head>
 <body>
 	<header class="Universal-Header">
 		<div class="logo">
-			<a href="#"><img src="images/MY_JOURNEY-removebg-preview.png" alt="logo" class="logo-image"></a>
+			<a href="index.html"><img src="images/Logazo.png" alt="logo" class="logo-image"></a>
 		</div>
 		<nav class="Universal-Nav">
 			<ul class="nav__ul">
-				<li><a href="#" class="nav-items">Home</a></li>
+				<li><a href="index.html" class="nav-items">Home</a></li>
 				<li><a href="#" class="nav-items">Plans</a></li>
 				<li><a href="#" class="nav-items">Gallery</a></li>
+				<li id="MySideNav" class="SideNav"  onclick="openNav()"><i class="fa-solid fa-bars fa-2x"></i></li>
 			</ul>
 		</nav>
 	</header>
 
-	<!-- showcase -->
+		<!-- showcase -->
+		
+	<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">Home</a>
+			<a href="#">Plans</a>
+			<a href="#">Gallery</a>
+	</div>
 
 	<section class="showcase">
 		<div class="div-showcase">
@@ -31,25 +41,46 @@
 		</div>
 	</section>
 
-	<!-- another -->
+	<!-- Grid select -->
 
-	<section class="cards">
-		<div class="grid options">
-			<a href="#" class="One item">
-				<h3 class="option-tittle">CHALLENGES</h2>
+	<section class="select">
+		<div class="select__grid">
+			<a href="#" class="challenges item">
+				<h3 class="cards__tittle">CHALLENGES</h3>
 			</a>
-			<a href="#" class="Two item" >
-				<h3 class="option-tittle">PROTEINS</h2>
+			<a href="#" class="Proteins item" >
+				<h3 class="cards__tittle">PROTEINS</h3>
 			</a>
-			<a href="#" class="Three item">
-				<h3 class="option-tittle">ROAD MAPS</h2>
+			
+			<a href="#" class="RoadMaps item">
+				<h3 class="cards__tittle">ROAD MAPS</h3>
 			</a>
 		</div>
 	</section>
 
+	<!-- Trainers -->
+
+	<section class="Trainers">
+		<div class="Trainers__grid">
+			<div href="" class="TrainerA TrainersItem">
+				<h3 class="trainer-tittle">John Black</h3>
+			</div>
+			<div href="" class="TrainerB TrainersItem">
+				<h3 class="trainer-tittle">Drake Klein</h3>
+			</div>
+			<div href="" class="TrainerC TrainersItem">
+				<h3 class="trainer-tittle">Tyna Grey </h3>
+			</div>
+		</div>
+	</section>
+
 	<!-- Scripts -->
+	<footer class="Universal-Footer">
+		<h2>Made by D-anv</h2>
+		<h4>It is a web page to practice layout</h4>
+	</footer>
 	
-	<script src="script/ScrollReveal.js"></script>
+	<script src="script/index.js"></script>
 
 </body>
 </html>
